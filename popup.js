@@ -9,7 +9,7 @@ function upload_file(i, file){
     var ext = i.slice(i.length-4);
     //if(ext!=".png"||ext!="jpeg"||ext!=".jpg"||ext!=".gif"||ext[0]!=".")i+=".png"
     if(ext[0]!=".")i+=".png";
-    var url = "http://128.4.12.128:1281/?name="+i;
+    var url = "http://localhost:1281/?name="+i;
     var oReq = new XMLHttpRequest();
     oReq.open("POST", url, true);
     oReq.onload = function(oEvent){
