@@ -30,7 +30,7 @@ function upload_file(i, file){
 }
 function upload_text(i){
     console.log("uploading text")
-    var url = "http://128.4.12.128:1281/?name="+Date.now()+".txt";
+    var url = "http://localhost:1281/?name="+Date.now()+".txt";
     var oReq = new XMLHttpRequest();
     oReq.open("POST",url,true);
     oReq.onloadend = function(data){
